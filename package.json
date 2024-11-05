@@ -1,0 +1,58 @@
+{
+    "name": "vscodine",
+    "displayName": "VSCodine",
+    "description": "",
+    "version": "0.0.1",
+    "engines": { "vscode": "^1.95.0" },
+    "publisher": "SlashDEV",
+    "license": "MIT",
+    "homepage": "-",
+    "repository": { "type": "git", "url": "https://github.com/zer0less/devspace.git" },
+    "bugs": { "url": "https://github.com/zer0less/devspace/issues" },
+    "icon": "img/logo.png",
+    "categories": [ "Other" ],
+    "keywords": [ "snippet", "theme", "keymaps", "slashDEV", "VSCodine" ],
+    "activationEvents": [ "onStartupFinished" ],
+    "main": "./extension.js",
+    "contributes": {
+        "themes": [
+            { "label": "Mezora", "uiTheme": "vs-dark", "path": "./themes/padora-color-theme.json" },
+            { "label": "Mezaro", "uiTheme": "vs-dark", "path": "./themes/sonama-color-theme.json" }
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                { "id": "vscodine", "title": "VScodine", "icon": "img/icon.png" }
+            ]
+        },
+        "views": {
+            "vscodine": [
+                { "id": "vscodine.sideBar", "name": "VScodine", "contextualTitle": "VScodine" }
+            ]
+        },
+        "viewsWelcome": [
+            {
+                "view": "vscodine.welcome",
+                "contents": "Welcome to VSCodine"
+            }
+            
+        ],
+        "commands": [
+            { "command": "vscodine.open", "title": "Open VSCodine" }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.95.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "16.x",
+        "eslint": "^8.47.0",
+        "glob": "^10.3.3",
+        "mocha": "^10.2.0",
+        "typescript": "^5.1.6",
+        "@vscode/test-electron": "^2.3.4"
+  }
+}
