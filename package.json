@@ -1,14 +1,12 @@
 {
     "name": "vscodine",
     "displayName": "VSCodine",
-    "description": "",
+    "description": "An extension or something",
     "version": "0.0.1",
     "engines": { "vscode": "^1.95.0" },
     "publisher": "SlashDEV",
     "license": "MIT",
-    "homepage": "-",
-    "repository": { "type": "git", "url": "https://github.com/zer0less/devspace.git" },
-    "bugs": { "url": "https://github.com/zer0less/devspace/issues" },
+    "repository": { "type": "git", "url": "https://github.com/zer0code9/vscodine.git" },
     "icon": "img/logo.png",
     "categories": [ "Other" ],
     "keywords": [ "snippet", "theme", "keymaps", "slashDEV", "VSCodine" ],
@@ -16,24 +14,21 @@
     "main": "./extension.js",
     "contributes": {
         "themes": [
-            { "label": "Mezora", "uiTheme": "vs-dark", "path": "./themes/padora-color-theme.json" },
-            { "label": "Mezaro", "uiTheme": "vs-dark", "path": "./themes/sonama-color-theme.json" }
+            { "label": "Padora", "uiTheme": "vs-dark", "path": "./themes/padora-color-theme.json" },
+            { "label": "Sonama", "uiTheme": "vs-dark", "path": "./themes/sonama-color-theme.json" }
         ],
         "viewsContainers": {
             "activitybar": [
-                { "id": "vscodine", "title": "VScodine", "icon": "img/icon.png" }
+                { "id": "vscodine", "title": "VSCodine", "icon": "img/icon.png" }
             ]
         },
         "views": {
             "vscodine": [
-                { "id": "vscodine.sideBar", "name": "VScodine", "contextualTitle": "VScodine" }
+                { "id": "vscodine.sideBar", "name": "VSCodine", "contextualTitle": "VScodine" }
             ]
         },
         "viewsWelcome": [
-            {
-                "view": "vscodine.welcome",
-                "contents": "Welcome to VSCodine"
-            }
+            { "view": "vscodine.sideBar", "contents": "Something something something..." }
             
         ],
         "commands": [
