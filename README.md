@@ -3,6 +3,14 @@
   <h1 align="center">VSCodine</h1>
 </p>
 
-A personal extension. You can use it if you want.
+A personal extension for personal use. You can use it if you want.
 
-There is nothing...
+This extension is complementary with [Dev Space](https://marketplace.visualstudio.com/items?itemName=SlashDEV.devspace).
+
+There is nothing more...
+
+Also install [Dev Space](https://marketplace.visualstudio.com/items?itemName=SlashDEV.devspace)!
+
+**Hope you enjoy VSCodine!**
+
+By SlashDEV

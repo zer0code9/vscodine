@@ -4,16 +4,14 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	vscode.window.showInformationMessage('Hello from devspace!');
-
-	context.subscriptions.push(vscode.commands.registerCommand('vscodine.open', () => {
-		vscode.window.showInformationMessage('Open VSCodine.');
+	context.subscriptions.push(vscode.commands.registerCommand('vscodine.hello', () => {
+		vscode.window.showInformationMessage('Hello VSCodine.');
 	}));
 
 	let statusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
 	statusBar.text = 'VSCodine';
 	statusBar.tooltip = 'This does nothing';
-	statusBar.command = 'vscodine.open';
+	statusBar.command = 'vscodine.hello';
 	statusBar.show();
 
 	context.subscriptions.push(statusBar);

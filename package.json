@@ -2,14 +2,14 @@
     "name": "vscodine",
     "displayName": "VSCodine",
     "description": "An extension or something",
-    "version": "0.0.1",
+    "version": "0.2.1",
     "engines": { "vscode": "^1.95.0" },
     "publisher": "SlashDEV",
     "license": "MIT",
     "repository": { "type": "git", "url": "https://github.com/zer0code9/vscodine.git" },
     "icon": "img/logo.png",
     "categories": [ "Other" ],
-    "keywords": [ "snippet", "theme", "keymaps", "slashDEV", "VSCodine" ],
+    "keywords": [ "slashDEV", "VSCodine" ],
     "activationEvents": [ "onStartupFinished" ],
     "main": "./extension.js",
     "contributes": {
@@ -17,14 +17,9 @@
             { "label": "Padora", "uiTheme": "vs-dark", "path": "./themes/padora-color-theme.json" },
             { "label": "Sonama", "uiTheme": "vs-dark", "path": "./themes/sonama-color-theme.json" }
         ],
-        "viewsContainers": {
-            "activitybar": [
-                { "id": "vscodine", "title": "VSCodine", "icon": "img/icon.png" }
-            ]
-        },
         "views": {
-            "vscodine": [
-                { "id": "vscodine.sideBar", "name": "VSCodine", "contextualTitle": "VScodine" }
+            "slashdev": [
+                { "id": "vscodine.sideBar", "name": "VSCodine", "contextualTitle": "VSCodine" }
             ]
         },
         "viewsWelcome": [
@@ -32,7 +27,7 @@
             
         ],
         "commands": [
-            { "command": "vscodine.open", "title": "Open VSCodine" }
+            { "command": "vscodine.hello", "title": "Hello VSCodine" }
         ]
     },
     "scripts": {
