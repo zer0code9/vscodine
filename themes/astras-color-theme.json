@@ -1,5 +1,5 @@
 {
-	"name": "Sonama",
+	"name": "Astras",
 	"$schema": "vscode://schemas/color-theme",
 	"type": "dark",
 	"colors": {
@@ -205,7 +205,7 @@
 		"tab.inactiveBackground": "#000000",
 		"tab.unfocusedActiveForeground": "#9A0000",
 		"tab.unfocusedActiveBackground": "#9A00FF3A",
-		"tab.unfocusedActiveBorder": "#9A009A",
+		"tab.unfocusedActiveBorder": "#00000000",
 		"tab.unfocusedHoverForeground": "#9A0000",
 		"tab.unfocusedHoverBackground": "#000000",
 		"tab.unfocusedHoverBorder": "#9A009A",
@@ -230,10 +230,10 @@
 		"sideBarTitle.foreground": "#FF9A00",
 		"list.hoverForeground": "#FF0000",
 		"list.hoverBackground": "#000000",
-		"list.activeSelectionForeground": "#FF00FF",
+		"list.activeSelectionForeground": "#FF0000",
 		"list.activeSelectionBackground": "#9A00003A",
-		"list.inactiveSelectionForeground": "#9A009A",
-		"list.inactiveSelectionBackground": "#9A00FF3A",
+		"list.inactiveSelectionForeground": "#FF0000",
+		"list.inactiveSelectionBackground": "#9A00003A",
 		"list.highlightForeground": "#9a009a",
 		"list.focusForeground": "#FF00FF",
 		"list.focusBackground": "#000000",
@@ -248,7 +248,7 @@
 		"activityBar.inactiveForeground": "#9A0000",
 		"activityBarBadge.foreground": "#000000",
 		"activityBarBadge.background": "#9A00FF",
-		"activityBar.activeBackground": "#000000",
+		"activityBar.activeBackground": "#9A00003A",
 // mapBar (left)
 		"minimap.background": "#000000",
 		"minimapSlider.activeBackground": "#9A00007f",

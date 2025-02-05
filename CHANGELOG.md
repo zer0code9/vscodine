@@ -1,3 +1,3 @@
-# Change Log
+# Change Log for VSCodine
 
-No need to know
+Just changing themes

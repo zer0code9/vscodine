@@ -1,48 +1,39 @@
 {
-    "name": "vscodine",
-    "displayName": "VSCodine",
-    "description": "An extension or something",
-    "version": "0.2.1",
-    "engines": { "vscode": "^1.95.0" },
-    "publisher": "SlashDEV",
-    "license": "MIT",
-    "repository": { "type": "git", "url": "https://github.com/zer0code9/vscodine.git" },
-    "icon": "img/logo.png",
-    "categories": [ "Other" ],
-    "keywords": [ "slashDEV", "VSCodine" ],
-    "activationEvents": [ "onStartupFinished" ],
-    "main": "./extension.js",
-    "contributes": {
-        "themes": [
-            { "label": "Padora", "uiTheme": "vs-dark", "path": "./themes/padora-color-theme.json" },
-            { "label": "Sonama", "uiTheme": "vs-dark", "path": "./themes/sonama-color-theme.json" }
-        ],
-        "views": {
-            "slashdev": [
-                { "id": "vscodine.sideBar", "name": "VSCodine", "contextualTitle": "VSCodine" }
-            ]
-        },
-        "viewsWelcome": [
-            { "view": "vscodine.sideBar", "contents": "Something something something..." }
-            
-        ],
-        "commands": [
-            { "command": "vscodine.hello", "title": "Hello VSCodine" }
-        ]
-    },
-    "scripts": {
-        "lint": "eslint .",
-        "pretest": "npm run lint",
-        "test": "node ./test/runTest.js"
-    },
-    "devDependencies": {
-        "@types/vscode": "^1.95.0",
-        "@types/mocha": "^10.0.1",
-        "@types/node": "16.x",
-        "eslint": "^8.47.0",
-        "glob": "^10.3.3",
-        "mocha": "^10.2.0",
-        "typescript": "^5.1.6",
-        "@vscode/test-electron": "^2.3.4"
+  "name": "vscodine",
+  "displayName": "VSCodine",
+  "description": "Better themes for VSCode",
+  "version": "1.0.1",
+  "author": "zer0code9",
+  "publisher": "SlashDEV",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zer0code9/vscodine.git"
+  },
+  "icon": "img/logo.png",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "slashDEV",
+    "VSCodine"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Astras",
+        "uiTheme": "vs-dark",
+        "path": "./themes/astras-color-theme.json"
+      },
+      {
+        "label": "Zaneus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/zaneus-color-theme.json"
+      }
+    ]
   }
 }
